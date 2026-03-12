@@ -28,6 +28,8 @@ First, we need the following components to carry out the project:
 # 🔎 Step by Step
 ### 1. 📟 ESP32 Drivers
 
+https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads
+
 ### 2. ⚖️ Existen 2 versiones del proyecto, ¿cual vas a elegir?
 
 - Proyecto completo y pulido
@@ -36,6 +38,8 @@ First, we need the following components to carry out the project:
 ### 3. 📜 Una vez elegida la version, ¿que necesitamos para empezar a construir nuestro BlueJammer en cada caso?
 
 ### 4. 🛠️ Flash & Firmware
+
+https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
 ### 5. ⛓️‍💥 Connections
 
