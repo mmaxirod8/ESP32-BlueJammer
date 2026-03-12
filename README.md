@@ -22,4 +22,7 @@ First, we need the following components to carry out the project:
 - `Jumpers wire`
 - `Protoboard (for testing in first placer)`
 - `PCB perforda (para implementacion final y portabilidad)`
-- Entonces
+
+---
+
+### 📌 Como empezamos?
