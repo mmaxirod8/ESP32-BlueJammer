@@ -29,15 +29,15 @@ First, we need the following components to carry out the project:
 # 🔎 Step by Step
 ### 1. 📟 ESP32 Drivers
 En primer lugar, es escencial que nuestra PC pueda reconocer a nuestra ESP32 en sus puertos de I/O. 
-- Para ello, descargamos el archivo `` del siguiente link: https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads
-- Luego, debemos descomprimir la carpeta que nos aparacera
+- Para ello, descargamos el archivo con el siguiente nombre `CP210x Universal Windows Driver` del siguiente link: https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads
+- Luego, debemos descomprimir la carpeta que nos aparacera como descarga
 - Una vez hecho lo anterior, conectamos nuestra `ESP32` y nos iremos a `Device Manager`, y haremos click derecho en nuestro equipo principal (PC, de donde derivan todas las demas listas de dispositivos conectados), siguiente a ello, le damos click en `Add drivers`
 -  En esta opcion, apretaremos en los tres puntitos, y aqui deberemos de buscar la ubicacion de la carpeta descomprimida que hemos descargado del link proporcionado
 -  Nos tendra que aparecer que los drivers se añadieron correctamente, y para confirmar, nuestra ESP32 debera salir en las listas desplegables `Other devices` o en `Ports (COM & LPT)`, junto al puerto que le asigno nuestra PC
 
 ### 2. ⚖️ Existen 2 versiones del proyecto, ¿cual vas a elegir?
 
-- *Proyecto completo*
+- *Proyecto completo* --> Incluye menu de seleccion (navegable con botones) de Jamming y otras opciones (Vulnerabilidades Iphone, Analizador de Señales, entre otras), tambien un led indicador de accion (indica cuando el dispositivo esta realizando una accion jamming) y una mayor portabilidad dado que tiene una bateria de litio, y su tamaño es considerablemente mas pequeño, debido a la personalizacion de la PCB en donde iran ensamblados todos los componentes.
 - *Proyecto de rapida implementacion*
 
 ### 3. 📜 Una vez elegida la version, ¿que necesitamos para empezar a construir nuestro BlueJammer en cada caso?
