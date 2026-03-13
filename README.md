@@ -14,7 +14,7 @@
 
 ### 🛒 Things we need
 First, we need the following components to carry out the project:
-- `ESP32-WROOM-32` or `ESP32-U` (este ultimo debera tener incorporado su antena propia)
+- `ESP32-WROOM-32` (de 38 pines) or `ESP32-U` (este ultimo debera tener incorporado su antena propia)
 - `USB Cable` or `Litium Battery` [optional], for the power of the ESP32
 - `2 x nrf24l01 + anthena`
 - `Jumpers wire` or `tin` [optional], for connections
@@ -52,6 +52,11 @@ En esta parte tenemos dos paginas web que se encargaran del flasheo y firmware d
 https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
 ### 5. ⛓️‍💥 Connections
+En esta parte es donde debemos prestar muchisima atencion
+- Debemos verificar la cantidad de pines y el modelo de nuestra placa. Las siguientes imagenes describen el pinmap de las placas ESP32 mas comunes:
+   - ESP32-WROOM-32 (38 Pins)
+   
+       
 
 
 
