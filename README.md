@@ -55,4 +55,12 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 En esta parte es donde debemos prestar muchisima atencion
 - Debemos verificar la cantidad de pines y el modelo de nuestra placa. Las siguientes imagenes describen el pinmap de las placas ESP32 mas comunes:
    - ESP32-WROOM-32 (38 Pins)
-     
+   <p align="center">
+     <img width="1077" height="521" alt="image" src="https://github.com/user-attachments/assets/7334332b-b5f3-4cb0-bdd5-9baee315d54c" />
+</p>
+
+   - ESP32-WROOM-32 (30 Pins)
+   <p align="center">
+   <img width="950" height="600" alt="image" src="https://github.com/user-attachments/assets/34bf288e-bf40-4375-a491-68d3510262a8" />
+</p>
+
