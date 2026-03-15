@@ -37,9 +37,9 @@ En primer lugar, es escencial que nuestra PC pueda reconocer a nuestra ESP32 en 
 
 ### 2. ⚖️ Existen 2 versiones del proyecto, ¿cual vas a elegir?
 
-- ***Proyecto completo*** --> Incluye menu de seleccion (navegable con botones) de Jamming de objetivos (como para: Vulnerabilidades Iphone, Analizador de Señales, entre otras), tambien un led indicador de accion (indica cuando el dispositivo esta realizando una accion jamming) y una mayor portabilidad dado que tiene una bateria de litio, y su tamaño es considerablemente mas pequeño, debido a la personalizacion de la PCB en donde iran ensamblados todos los componentes.
+- ***Proyecto completo*** --> Incluye menu de seleccion (navegable con botones que deberan ir colocados en la PCB) de Jamming de objetivos (como para: Vulnerabilidades Iphone, Analizador de Señales, entre otras), un led indicador de accion (indica cuando el dispositivo esta realizando una accion jamming), tambien una mayor portabilidad dado que tiene una bateria de litio incorporada, y su tamaño es considerablemente mas pequeño, debido a la personalizacion que se le puede aplicar a la PCB, lugar en donde iran ensamblados todos los componentes del dispositivo.
 
-- ***Proyecto de rapida implementacion*** --> Incluye un uso de pocos materiales para su implementacion, contando solo con una alimentacion (PC o bateria), el microcontrolador ESP32, las placas nrf24L01 junto a sus antenas, y wire jumpers. No tiene menu de seleccion de objetivos, por lo que al activarse, afecta a toda la frecuencia de 2.4 GHz en su alcance.
+- ***Proyecto de rapido armado*** --> Incluye un uso de pocos materiales para su implementacion, contando solo con una alimentacion (PC o bateria), el microcontrolador ESP32, las placas nrf24L01 junto a sus antenas, una protoboard y wire jumpers. No tiene menu de seleccion de objetivos, por lo que al activarse, afecta a toda la frecuencia de 2.4 GHz en su alcance. Puede ser un proyecto fijo (si se aplica en protoboard) o de portabilidad (por si queremos realizar este mismo proyecto en una PCB, sin emabrgo, aqui ya no entraria en la categoria de rapido armado debido a las soldaduras y conexiones que hay que hacer para la PCB, a diferencia de solo conectar cables en una protoboard).
 
 ### 3. 📜 Una vez elegida la version, ¿que necesitamos para empezar a construir nuestro BlueJammer en cada caso?
 
