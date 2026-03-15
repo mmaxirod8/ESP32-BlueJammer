@@ -8,7 +8,7 @@
 
 ---
 
-### ⚠️ ***Legal Information:*** Este proyecto solo tiene fines educativos. No promueve el uso ilegal e indebido.
+### ⚠️ ***Legal Information:*** Este proyecto solo tiene fines educativos. No promueve el uso ilegal e indebido. Se deben tener precauciones de seguridad.
 
 ---
 
