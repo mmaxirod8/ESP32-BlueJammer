@@ -47,7 +47,9 @@ En primer lugar, es escencial que nuestra PC pueda reconocer a nuestra ESP32 en 
 
 En esta parte tenemos dos paginas web que se encargaran del flasheo y firmware de la placa, es decir, aplicaran el codigo necesario para que el ESP32 ejecute las acciones jamming.
 
-- Para la version *Proyecto completo*:
+- Para la version *Proyecto completo*: 
+https://mega.nz/folder/OQpDnLgY#gKpLGsnu_np7O00hVTvWxg
+
 - Para la version *Proyecto de rapida implementeacion*:
 https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
