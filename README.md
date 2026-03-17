@@ -83,4 +83,9 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
           □ CS
           □ SCK
        # HSPI -->
+          □ MOSI
+          □ MISO
+          □ CE
+          □ CS
+          □ SCK
 
