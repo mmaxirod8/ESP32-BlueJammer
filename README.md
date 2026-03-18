@@ -37,9 +37,9 @@ En primer lugar, es escencial que nuestra PC pueda reconocer a nuestra ESP32 en 
 
 ### 2. ⚖️ Existen 2 versiones del proyecto, ¿cual vas a elegir?
 
-- ***Proyecto completo*** --> Incluye menu de seleccion (navegable con botones que deberan ir colocados en la PCB) de Jamming para diferentes objetivos (Vulnerabilidades Iphone, Analizador de Señales, Camaras, entre otras), un led indicador de accion (indica cuando el dispositivo esta realizando una accion jamming), tambien una mayor portabilidad dado que tiene una bateria de litio incorporada, y una PCB, lugar en donde iran ensamblados todos los componentes del dispositivo.
+- 1️⃣ ***Proyecto completo*** --> Incluye menu de seleccion (navegable con botones que deberan ir colocados en la PCB) de Jamming para diferentes objetivos (Vulnerabilidades Iphone, Analizador de Señales, Camaras, entre otras), un led indicador de accion (indica cuando el dispositivo esta realizando una accion jamming), tambien una mayor portabilidad dado que tiene una bateria de litio incorporada, y una PCB, lugar en donde iran ensamblados todos los componentes del dispositivo.
 
-- ***Proyecto de rapida implementacion*** --> Incluye un uso de pocos materiales para su implementacion. No tiene menu de seleccion de objetivos, por lo que al activarse, afecta a toda la frecuencia de 2.4 GHz en su alcance. Puede ser un proyecto fijo (si se aplica en protoboard + PC) o de portabilidad (por si queremos realizar este mismo proyecto en una PCB + bateria portatil; sin embargo, aqui ya se tardaria mas tiempo debido a las soldaduras y conexiones que hay que hacer para la PCB, a diferencia de solo conectar cables en una protoboard). Como dato extra, si se desea un dispositivo BlueJammer, el mas pequeño posible, el dispositivo del `proyecto de rapida implementacion portatil` es la mejor opcion, ya que es mucho mas chico que el del `proyecto completo` (debido a que contiene pantalla, botones, etc)
+- 2️⃣ ***Proyecto de rapida implementacion*** --> Incluye un uso de pocos materiales para su implementacion. No tiene menu de seleccion de objetivos, por lo que al activarse, afecta a toda la frecuencia de 2.4 GHz en su alcance. Puede ser un proyecto fijo (si se aplica en protoboard + PC) o de portabilidad (por si queremos realizar este mismo proyecto en una PCB + bateria portatil; sin embargo, aqui ya se tardaria mas tiempo debido a las soldaduras y conexiones que hay que hacer para la PCB, a diferencia de solo conectar cables en una protoboard). Como dato extra, si se desea un dispositivo BlueJammer, el mas pequeño posible, el dispositivo del `proyecto de rapida implementacion portatil` es la mejor opcion, ya que es mucho mas chico que el del `proyecto completo` (debido a que contiene pantalla, botones, etc)
 
 ### 3. 📜 Una vez elegida la version, ¿que necesitamos para empezar a construir nuestro BlueJammer en cada caso?
 
@@ -47,10 +47,10 @@ En primer lugar, es escencial que nuestra PC pueda reconocer a nuestra ESP32 en 
 
 En esta parte tenemos dos paginas web que se encargaran del flasheo y firmware de la placa, es decir, aplicaran el codigo necesario para que el ESP32 ejecute las acciones jamming.
 
-- Para la version *Proyecto completo*: 
+- 1️⃣ Para la version *Proyecto completo*: 
 https://mega.nz/folder/OQpDnLgY#gKpLGsnu_np7O00hVTvWxg
 
-- Para la version *Proyecto de rapida implementeacion*:
+- 2️⃣ Para la version *Proyecto de rapida implementeacion*:
 https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
 ### 5. ⛓️‍💥 Connections
@@ -72,18 +72,15 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       <img width="760" height="600" alt="image" src="https://github.com/user-attachments/assets/c7a51ea7-fc47-4d03-b2b8-3a622ed1e1b9" />
       </p>
 
-- Una vez establecidos los pines y los modelos de las placas a utilizar, vamos a proceder con las conexiones, segun el proyecto que hayamos elegido:
-   - Para la version *Proyecto completo*:
-       Parecido a lo de abajo, pines de oled
-     
-   - Para la version *Proyecto de rapida implementeacion*:
-      - Serial Peripheral Interface of ESP32 (cualquier version)
+- 👉 Una vez establecidos los pines y los modelos de las placas a utilizar, vamos a proceder con las conexiones, segun el proyecto que hayamos elegido:
+   - 1️⃣ Para la version *Proyecto completo*:
+       - Serial Peripheral Interface of ESP32 (pines para las placas de antena, y para cualquier version de los ESP32)
 
          - HSPI (Generalmente se usa como bus SPI principal de alta velocidad)
  
 
 
-      | Pin nrf24L01 (1 de 2 placa) | Pin ESP32 |
+      | Pines nrf24L01 (1 de 2 placa) | Pin ESP32 |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -97,7 +94,68 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
  
 
 
-      | Pin nrf24L01 (2 de 2 placa) | Pin ESP32 |
+      | Pines nrf24L01 (2 de 2 placa) | Pin ESP32 |
+      | :--- | :---: |
+      | **MOSI** | Au | 
+      | **MISO** | So |
+      | **SCK** | Au |
+      | **CE** | Au |
+      | **CS o CNS** | Au |
+      | **VCC** | Au |
+      | **GND** | Au |
+
+     - Oled (pines para la pantalla OLED donde veremos el menu de opciones)
+
+      | Pines Pantalla Oled | Pin ESP32 |
+      | :--- | :---: |
+      | **Boton 1** | Au | 
+      | **Boton 2** | So |
+      | **Boton 3** | Au |
+      | **Boton 4** | Au |
+      | **Boton 5** | Au |
+
+     - Led activador (pines para el led indicador de activacion jamming)
+
+      | Pines Led Activador | Pin ESP32 |
+      | :--- | :---: |
+      | **Boton 1** | Au | 
+      | **Boton 2** | So |
+      | **Boton 3** | Au |
+      | **Boton 4** | Au |
+      | **Boton 5** | Au |
+    
+     - Buttons (pines para el uso de los botones)
+    
+      | Pines Botones | Pin ESP32 |
+      | :--- | :---: |
+      | **Boton 1** | Au | 
+      | **Boton 2** | So |
+      | **Boton 3** | Au |
+      | **Boton 4** | Au |
+      | **Boton 5** | Au |
+     
+   - 2️⃣ Para la version *Proyecto de rapida implementeacion*:
+      - Serial Peripheral Interface of ESP32 (pines para las placas de antena, y para cualquier version de los ESP32)
+
+         - HSPI (Generalmente se usa como bus SPI principal de alta velocidad)
+ 
+
+
+      | Pines nrf24L01 (1 de 2 placa) | Pin ESP32 |
+      | :--- | :---: |
+      | **MOSI** | Au | 
+      | **MISO** | So |
+      | **SCK** | Au |
+      | **CE** | Au |
+      | **CS o CNS** | Au |
+      | **VCC** | Au |
+      | **GND** | Au |
+      
+       - VSPI (Segundo bus independiente, ideal para separar dispositivos y evitar conflictos de velocidad.)
+ 
+
+
+      | Pines nrf24L01 (2 de 2 placa) | Pin ESP32 |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
