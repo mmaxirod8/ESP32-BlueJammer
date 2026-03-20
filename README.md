@@ -168,7 +168,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
      
    - 2️⃣ Para la version *Proyecto básico*:
-      - 📛 Serial Peripheral Interface of ESP32 (pines para las placas de antena, y para cualquier version de los ESP32)
+      - 📛 ***Serial Peripheral Interface*** of ESP32 (pines para las placas de antena, y para cualquier version de los ESP32)
       
         &nbsp;&nbsp; --> ***HSPI*** (Generalmente se usa como bus SPI principal de alta velocidad)
         
