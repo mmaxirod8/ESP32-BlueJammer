@@ -15,11 +15,11 @@
 ### 🛒 Things we need
 First, we need the following components to carry out the project:
 - `ESP32-WROOM-32` (de 38 pines o de 30 pines) or `ESP32-WROOM-32U` (este ultimo debera tener incorporado su antena propia)
-- `USB Cable` or `Litium Battery` [optional], for the power of the ESP32
+- `USB Cable` or `Battery output 3.3 V (litium or a portable one)` [optional], for the power of the ESP32
 - `2 x nrf24l01 + anthena` (this black model recomended, existen otros)
 - `Jumpers wire` or `tin` [optional], for connections
 - `Protoboard` (for testing in first place) or `PCB perforda` (si queremos una implementacion final y portabilidad) [optional]
-- `Una PC`para cargar el firmware y flasheo
+- `PC` para cargar el firmware, el flasheo, y por si queremos usarla para alimentar a la ESP32
 - `0.9 inch Oled screen` [optional]
 - `5 buttons` [optional]
 - `Led Monitor` [optional]
@@ -52,6 +52,7 @@ En primer lugar, es escencial que nuestra PC pueda reconocer a nuestra ESP32 en 
     - `ESP32 (Models below)`
     - `2x nrf24L01 + Antenas`
     - `Battery output 3.3 V (litium or a portable one)`
+    - `PC` para cargar el firmware y el flasheo
     - For testing --> `Protoboard` & `Jump Wires`
 
 
@@ -60,7 +61,8 @@ En primer lugar, es escencial que nuestra PC pueda reconocer a nuestra ESP32 en 
     - `ESP32 (Models below)`
     - `Protoboard`
     - `Jump Wires`
-    - `PC + USB cable` or `Battery output 3.3 V (litium or a portable one)`
+    - `USB cable` or `Battery output 3.3 V (litium or a portable one)`
+    - `PC` para cargar el firmware, el flasheo, y por si queremos usarla para alimentar a la ESP32
 
 ### 4. 🛠️ Flash & Firmware
 
