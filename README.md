@@ -12,7 +12,7 @@
 
 ---
 
-### 🔎 How it works?
+### ❓ How it works?
 
 
 ### 🛒 Components that can be implemented
