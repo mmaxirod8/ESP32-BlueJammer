@@ -53,7 +53,7 @@ El objetivo del mismo tambien es identificar las debilidades de los protocolos i
 
 ---
 
-### 🛒 Components that can be implemented
+### 🛒 Components that can be implemented in this device
 Somo of these following components were used to carry out the project:
 - `ESP32-WROOM-32` (de 38 pines o de 30 pines) or `ESP32-WROOM-32U` (este ultimo debera tener incorporado su antena propia)
 - `USB Cable` or `Battery output 3.3 V (litium or a portable one)` (for the power of the ESP32) [optional]
@@ -77,7 +77,7 @@ En primer lugar, es escencial que una PC pueda reconocer a la ESP32 en sus puert
 -  En esta opcion, se apreta en los tres puntitos, y aqui se debe de buscar la ubicacion de la carpeta descomprimida que hemos descargado del link proporcionado
 -  Tendra que aparecer que los drivers se añadieron correctamente, y para confirmar, la ESP32 debera salir en las listas desplegables `Other devices` o en `Ports (COM & LPT)`, junto al puerto que le asigno nuestra PC
 
-### 2. ⚖️ Existen 2 versiones del proyecto
+### 2. ⚖️ Existen 2 versiones conocidas del proyecto 
 
 - 1️⃣ ***Proyecto completo*** --> Incluye menu de seleccion (navegable con botones que deberan ir colocados en la PCB) de Jamming para diferentes objetivos (Pruebas de saturación en protocolos 802.11, Analizador de Señales, Análisis de interferencia en dispositivos IoT, entre otras), un led indicador de accion (indica cuando el dispositivo esta realizando una accion jamming), tambien una mayor portabilidad dado que tiene una bateria de litio incorporada, y una PCB, lugar en donde iran ensamblados todos los componentes del dispositivo.
 
@@ -109,7 +109,7 @@ En primer lugar, es escencial que una PC pueda reconocer a la ESP32 en sus puert
 
 ### 4. 🛠️ Flash & Firmware
 
-En esta parte existen dos paginas web que se encargan del flasheo y firmware de la placa, es decir, las que aplican el codigo necesario para que el ESP32 ejecute las acciones jamming.
+En esta parte existen dos sitios web que se encargan del flasheo y firmware de la placa, es decir, las que aplican el codigo necesario para que el ESP32 ejecute las acciones jamming.
 
 - 1️⃣ Para la version *Proyecto completo*: 
 https://mega.nz/folder/OQpDnLgY#gKpLGsnu_np7O00hVTvWxg
