@@ -35,30 +35,21 @@ Este proyecto puede ayudar a ingenieros a entender cómo proteger sus dispositiv
 El objetivo del mismo tambien es identificar las debilidades de los protocolos inalámbricos para implementar defensas robustas. A continuación, se detallan las medidas técnicas para mitigar la susceptibilidad a la interferencia en la banda de 2.4 GHz:
 
 - 📌 ***Implementación de Adaptive Frequency Hopping (AFH)***
-
-El Bluetooth moderno utiliza AFH para "saltar" entre 79 canales. Una mitigación efectiva consiste en configurar los dispositivos para:
-
-   &nbsp;&nbsp;&nbsp; --> Identificación de Canales Ruidosos: Optimizar los algoritmos de detección de canales afectados para excluirlos dinámicamente de la secuencia de salto.
-
-   &nbsp;&nbsp;&nbsp; --> Reducción de Intervalos de Salto: Incrementar la velocidad de conmutación de frecuencia para minimizar el tiempo de exposición en un canal interferido.
+   - El Bluetooth moderno utiliza AFH para "saltar" entre 79 canales. Una mitigación efectiva consiste en configurar los dispositivos para:
+      - ***Identificación de Canales Ruidosos:*** Optimizar los algoritmos de detección de canales afectados para excluirlos dinámicamente de la secuencia de salto.
+      - ***Reducción de Intervalos de Salto:*** Incrementar la velocidad de conmutación de frecuencia para minimizar el tiempo de exposición en un canal interferido.
 
 - 📌 ***Transición a la Banda de 5 GHz / 6 GHz (Wi-Fi 6E/7)***
-
-La mayoría de los generadores de ruido basados en hardware económico (como el ESP32 + nRF24L01) están limitados físicamente a la banda de 2.4 GHz.
-
-   &nbsp;&nbsp;&nbsp; --> Migración de Espectro: Desplazar servicios críticos (videovigilancia, comunicación de datos sensible) a las bandas de 5 GHz o 6 GHz reduce drásticamente el área de ataque de dispositivos de baja complejidad.
+   - La mayoría de los generadores de ruido basados en hardware económico (como el ESP32 + nRF24L01) están limitados físicamente a la banda de 2.4 GHz.
+      - ***Migración de Espectro:*** Desplazar servicios críticos (videovigilancia, comunicación de datos sensible) a las bandas de 5 GHz o 6 GHz reduce drásticamente el área de ataque de dispositivos de baja complejidad.
 
 - 📌 ***Fortalecimiento del Lado del Cliente (Device Hardening)***
-
-Uso de Protocolos de Encriptación Robustos: Aunque la interferencia afecta la capa física (Capa 1 OSI), el uso de WPA3 en Wi-Fi ayuda a prevenir ataques de desautenticación que suelen acompañar al ruido electromagnético.
-
-   &nbsp;&nbsp;&nbsp; --> Blindaje Físico (Shielding): En entornos industriales críticos, el uso de pinturas conductivas o mallas de Faraday parciales puede proteger los receptores de interferencias externas no deseadas.
+   - Uso de Protocolos de Encriptación Robustos: Aunque la interferencia afecta la capa física (Capa 1 OSI), el uso de WPA3 en Wi-Fi ayuda a prevenir ataques de desautenticación que suelen acompañar al ruido electromagnético.
+      - ***Blindaje Físico (Shielding):*** En entornos industriales críticos, el uso de pinturas conductivas o mallas de Faraday parciales puede proteger los receptores de interferencias externas no deseadas.
 
 - 📌 ***Monitorización de Espectro (Spectrum Analysis)***
-
-Implementar sistemas de detección de intrusiones inalámbricas (WIDS) que alerten cuando el piso de ruido (noise floor) sube de forma anómala.
-
-   &nbsp;&nbsp;&nbsp; --> Alertas de DoS: Configurar sistemas de red para detectar patrones de denegación de servicio (DoS) por radiofrecuencia y activar protocolos de contingencia (como el cambio automático a una red cableada de respaldo).
+   - Implementar sistemas de detección de intrusiones inalámbricas (WIDS) que alerten cuando el piso de ruido (noise floor) sube de forma anómala.
+      - ***Alertas de DoS:*** Configurar sistemas de red para detectar patrones de denegación de servicio (DoS) por radiofrecuencia y activar protocolos de contingencia (como el cambio automático a una red cableada de respaldo).
 
 ---
 
