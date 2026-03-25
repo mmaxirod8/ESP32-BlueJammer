@@ -61,7 +61,7 @@ Some of these following components were used to carry out the project:
 - `Jumpers wire` or `tin` (for connections) [optional] 
 - `Protoboard` (for testing in first place) or `PCB perforda` (if we want a final implementation and portability) [optional]
 - `PC` (for loading the firmware, flashing, and if we want to use it to power the ESP32)
-- `0.9 inch Oled screen` [optional]
+- `0.9 inch (or 128x64 px) Oled screen` [optional]
 - `x5 buttons` [optional]
 - `Modulo Control Led` [optional]
 - `Modulo cargador de batería USB-c TP4056` (to charge the battery) [optional] 
@@ -86,7 +86,7 @@ First, it is essential that a PC can recognize the ESP32 on its I/O ports.
 ### 3. 📜 Components for the construction of the project, according to the version:
 
 - 1️⃣ ***Complete Project***
-    - `Oled Screen (128x64 px or 0.9 inches)`
+    - `0.9 inch (or 128x64 px) Oled screen`
     - `x5 Buttons`
     - `Modulo Control Led`
     - `Tin & Solder`
@@ -148,7 +148,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
         &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus)
         
-      | Pines nrf24L01 (1 de 2 placa) | Pin ESP32 |
+      | nrf24L01 pins (1 de 2 placa) | ESP32 pin |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -162,7 +162,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
   
 
 
-      | Pines nrf24L01 (2 de 2 placa) | Pin ESP32 |
+      | nrf24L01 pins (2 de 2 placa) | ESP32 pin |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -172,9 +172,9 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **VCC** | Au |
       | **GND** | Au |
 
-     - 📛 ***Oled Screen*** (pins for the OLED screen where we will see the options menu)
+     - 📛 ***0.9 inch (or 128x64 px) Oled screen*** (pins for the OLED screen where we will see the options menu)
 
-      | Pines Pantalla Oled | Pin ESP32 |
+      | Pines Pantalla Oled | ESP32 pin |
       | :--- | :---: |
       | **Boton 1** | Au | 
       | **Boton 2** | So |
@@ -184,7 +184,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
      - 📛 ***Modulo Control Led*** (pins for the jamming activation indicator LED)
 
-      | Pines Led Activador | Pin ESP32 |
+      | Pines Led Activador | ESP32 pin |
       | :--- | :---: |
       | **Boton 1** | Au | 
       | **Boton 2** | So |
@@ -194,7 +194,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
     
      - 📛 ***Buttons*** (pins for using the buttons)
     
-      | Pines Botones | Pin ESP32 |
+      | Pines Botones | ESP32 pin |
       | :--- | :---: |
       | **Boton 1** | Au | 
       | **Boton 2** | So |
@@ -207,7 +207,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       
         &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus)
         
-      | Pines nrf24L01 (1 de 2 placa) | Pin ESP32 |
+      | nrf24L01 pins (1 de 2 placa) | ESP32 pin |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -221,7 +221,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
   
 
 
-      | Pines nrf24L01 (2 de 2 placa) | Pin ESP32 |
+      | nrf24L01 pins (2 de 2 placa) | ESP32 pin |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
