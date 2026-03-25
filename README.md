@@ -109,7 +109,7 @@ First, it is essential that a PC can recognize the ESP32 on its I/O ports.
 
 ### 4. 🛠️ Flash & Firmware
 
-In this section there are two websites that handle the flashing and firmware of the board, that is, those that apply the code necessary for the ESP32 to perform the jamming actions.
+In this section there are two websites that handle the flashing and firmware of the board, that is, those that apply the necessary code for the ESP32 to perform the jamming actions.
 
 - 1️⃣ For the *Complete Project* version:
 https://mega.nz/folder/OQpDnLgY#gKpLGsnu_np7O00hVTvWxg
@@ -119,7 +119,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
 ### 5. ⛓️‍💥 Connections
 
-- First, you must verify the number of pins and the model of our boards (ESP32 and nrf24L01)
+- First, you must verify the number of pins and the model of the boards (ESP32 and nrf24L01)
 - The following images describe the pinmap of the most common ESP32 boards:
    - *ESP32-WROOM-32 (38 Pins)*
      <p align="center">
