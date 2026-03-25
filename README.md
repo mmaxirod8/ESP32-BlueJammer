@@ -148,7 +148,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
         &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus)
         
-      | nrf24L01 pins (1 of 2) | ESP32 pins |
+      | nrf24L01 (1 of 2) pins | ESP32 pins |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -162,7 +162,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
   
 
 
-      | nrf24L01 pins (2 of 2) | ESP32 pins |
+      | nrf24L01 (2 of 2) pins | ESP32 pins |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -217,7 +217,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       
         &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus)
         
-      | nrf24L01 pins (1 of 2) | ESP32 pins |
+      | nrf24L01 (1 of 2) pins | ESP32 pins |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -231,7 +231,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
   
 
 
-      | nrf24L01 pins (2 of 2) | ESP32 pins |
+      | nrf24L01 (2 of 2) pins | ESP32 pins |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
