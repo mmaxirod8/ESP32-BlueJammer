@@ -57,14 +57,14 @@ Its objective is also to identify weaknesses in wireless protocols in order to i
 Some of these following components were used to carry out the project:
 - `ESP32-WROOM-32` ( 38 pins or 30 pins) or `ESP32-WROOM-32U` (the latter must have its own built-in antenna)
 - `USB Cable` or `Battery output 3.3 V (lithium or a portable one)` (for the power of the ESP32) [optional]
-- `x2 nrf24l01 + anthena` (this black model recomended, there are others)
-- `Jumpers wire` or `tin` (for connections) [optional] 
-- `Protoboard` (for testing in first place) or `PCB perforda` (if we want a final implementation and portability) [optional]
+- `x2 nrf24l01 + Anthena` (this black model recomended, there are others)
+- `Jumpers wire` or `Tin` (for connections) [optional] 
+- `Protoboard` (for testing in first place) or `Perforated PCB` (if we want a final implementation and portability) [optional]
 - `PC` (for loading the firmware, flashing, and if we want to use it to power the ESP32)
 - `0.9 inch (or 128x64 px) Oled screen` [optional]
 - `x5 buttons` [optional]
-- `Modulo Control Led` [optional]
-- `Modulo cargador de batería USB-c TP4056` (to charge the battery) [optional] 
+- `Leds Switch Module Ws2812 Rgb` [optional]
+- `TP4056 USB-C Battery Charger Module` (to charge the battery) [optional] 
 
 ---
 
@@ -88,19 +88,19 @@ First, it is essential that a PC can recognize the ESP32 on its I/O ports.
 - 1️⃣ ***Complete Project***
     - `0.9 inch (or 128x64 px) Oled screen`
     - `x5 Buttons`
-    - `Modulo Control Led`
+    - `Leds Switch Module Ws2812 Rgb`
     - `Tin & Solder`
-    - `PCB (5x7 cm)`
+    - `Perforated PCB (5x7 cm)`
     - `ESP32 (Models below)`
-    - `x2 nrf24L01 + Antenas`
+    - `x2 nrf24L01 + Anthena`
     - `Battery output 3.3 V or 3.7 V (lithium or a portable one)`
-    - `Modulo cargador de batería USB-c TP4056` (to charge the lithium battery)
+    - `TP4056 USB-C Battery Charger Module` (to charge the lithium battery)
     - `PC & USB cable` (to load the firmware and flash)
     - For testing --> `Protoboard` & `Jump Wires`
 
 
 - 2️⃣ ***Basic Project***
-    - `x2 nrf24L01 + Antenas`
+    - `x2 nrf24L01 + Anthena`
     - `ESP32 (Models below)`
     - `Protoboard`
     - `Jump Wires`
@@ -148,7 +148,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
         &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus)
         
-      | nrf24L01 pins (1 de 2) | ESP32 pin |
+      | nrf24L01 pins (1 of 2) | ESP32 pins |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -162,7 +162,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
   
 
 
-      | nrf24L01 pins (2 de 2) | ESP32 pin |
+      | nrf24L01 pins (2 of 2) | ESP32 pins |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -174,7 +174,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
      - 📛 ***0.9 inch (or 128x64 px) Oled screen*** (pins for the OLED screen where we will see the options menu)
 
-      | Pines Pantalla Oled | ESP32 pin |
+      | Oled screen pins| ESP32 pins |
       | :--- | :---: |
       | **Boton 1** | Au | 
       | **Boton 2** | So |
@@ -182,9 +182,9 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **Boton 4** | Au |
       | **Boton 5** | Au |
 
-     - 📛 ***Modulo Control Led*** (pins for the jamming activation indicator LED)
+     - 📛 ***Leds Switch Module Ws2812 Rgb*** (pins for the jamming activation indicator LED)
 
-      | Pines Led Activador | ESP32 pin |
+      | Leds Switch Module pins | ESP32 pins |
       | :--- | :---: |
       | **Boton 1** | Au | 
       | **Boton 2** | So |
@@ -194,20 +194,31 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
     
      - 📛 ***Buttons*** (pins for using the buttons)
     
-      | Pines Botones | ESP32 pin |
+      | Pines Botones | ESP32 pins |
       | :--- | :---: |
       | **Boton 1** | Au | 
       | **Boton 2** | So |
       | **Boton 3** | Au |
       | **Boton 4** | Au |
       | **Boton 5** | Au |
+
+     - 📛 ***TP4056 USB-C Battery Charger Module*** (pins for the lithium battery charger)
+    
+      | Pines Botones | ESP32 pins |
+      | :--- | :---: |
+      | **Boton 1** | Au | 
+      | **Boton 2** | So |
+      | **Boton 3** | Au |
+      | **Boton 4** | Au |
+      | **Boton 5** | Au |
+
      
    - 2️⃣ For the *Basic Project* version:
       - 📛 ***Serial Peripheral Interface*** of ESP32 (pins for antenna boards, and for any version of the ESP32)
       
         &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus)
         
-      | nrf24L01 pins (1 de 2) | ESP32 pin |
+      | nrf24L01 pins (1 of 2) | ESP32 pins |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
@@ -221,7 +232,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
   
 
 
-      | nrf24L01 pins (2 de 2) | ESP32 pin |
+      | nrf24L01 pins (2 of 2) | ESP32 pins |
       | :--- | :---: |
       | **MOSI** | Au | 
       | **MISO** | So |
