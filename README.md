@@ -77,13 +77,13 @@ First, it is essential that a PC can recognize the ESP32 on its I/O ports.
 - In this option, click on the three dots, and then locate the extracted folder you downloaded from the provided link.
 - You should see a message indicating that the drivers were added correctly. To confirm, the ESP32 should appear in the `Other devices` or `Ports (COM & LPT)`, next to the port that our PC assigns to it
 
-### 2. ⚖️ Existen 2 versiones conocidas del proyecto 
+### 2. 🎏 There are 2 known versions of the project
 
-- 1️⃣ ***Proyecto completo*** --> Incluye menu de seleccion (navegable con botones que deberan ir colocados en la PCB) de Jamming para diferentes objetivos (Pruebas de saturación en protocolos 802.11, Analizador de Señales, Análisis de interferencia en dispositivos IoT, entre otras), un led indicador de accion (indica cuando el dispositivo esta realizando una accion jamming), tambien una mayor portabilidad dado que tiene una bateria de litio incorporada, y una PCB, lugar en donde iran ensamblados todos los componentes del dispositivo.
+- 1️⃣ ***Proyecto completo*** --> ***Complete Project*** --> Includes a selection menu (navigable with buttons that must be placed on the PCB) for Jamming for different objectives (Saturation tests in 802.11 protocols, Signal Analyzer, Interference analysis in IoT devices, among others), an action indicator LED (indicates when the device is performing a jamming action), also greater portability since it has a built-in lithium battery, and a PCB, where all the components of the device will be assembled.
 
-- 2️⃣ ***Proyecto básico*** --> Incluye un uso de pocos materiales para su implementacion. No tiene menu de seleccion de objetivos, por lo que al activarse, afecta a toda la frecuencia de 2.4 GHz en su alcance. Puede ser un proyecto fijo (si se aplica en protoboard + PC) o de portabilidad (por si queremos realizar este mismo proyecto en una PCB + bateria portatil; sin embargo, aqui ya se tardaria mas tiempo debido a las soldaduras y conexiones que hay que hacer para la PCB, a diferencia de solo conectar cables en una protoboard). Como dato extra, si se desea un dispositivo BlueJammer, el mas pequeño posible, el dispositivo del `proyecto de rapida implementacion portatil` es la mejor opcion, ya que es mucho mas chico que el del `proyecto completo` (debido a que contiene pantalla, botones, etc)
+- 2️⃣ ***Basic Project*** --> This project requires minimal materials for implementation. It lacks a target selection menu, so when activated, it affects the entire 2.4 GHz frequency within its range. It can be a fixed project (if implemented on a breadboard and PC) or a portable project (if you want to implement the same project on a PCB and portable battery; however, this will take longer due to the soldering and connections required for the PCB, unlike simply connecting wires on a breadboard). As an extra note, if you want the smallest possible BlueJammer device, the "portable quick-implementation project" device is the best option, as it is much smaller than the "complete project" device (because it includes a screen, buttons, etc.).
 
-### 3. 📜 Componentes para la construccion del proyecto, segun la version:
+### 3. 📜 Components for the construction of the project, according to the version:
 
 - 1️⃣ ***Proyecto completo***
     - `Oled Screen (128x64 px or 0.9 inches)`
