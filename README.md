@@ -182,7 +182,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **Boton 4** | Au |
       | **Boton 5** | Au |
 
-     - 📛 ***Modulo Control Led*** (pines para el led indicador de activacion jamming)
+     - 📛 ***Modulo Control Led*** (pins for the jamming activation indicator LED)
 
       | Pines Led Activador | Pin ESP32 |
       | :--- | :---: |
@@ -192,7 +192,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **Boton 4** | Au |
       | **Boton 5** | Au |
     
-     - 📛 ***Buttons*** (pines para el uso de los botones)
+     - 📛 ***Buttons*** (pins for using the buttons)
     
       | Pines Botones | Pin ESP32 |
       | :--- | :---: |
@@ -202,10 +202,10 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **Boton 4** | Au |
       | **Boton 5** | Au |
      
-   - 2️⃣ Para la version *Proyecto básico*:
-      - 📛 ***Serial Peripheral Interface*** of ESP32 (pines para las placas de antena, y para cualquier version de los ESP32)
+   - 2️⃣ For the *Basic Project* version:
+      - 📛 ***Serial Peripheral Interface*** of ESP32 (pins for antenna boards, and for any version of the ESP32)
       
-        &nbsp;&nbsp; --> ***HSPI*** (Generalmente se usa como bus SPI principal de alta velocidad)
+        &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus)
         
       | Pines nrf24L01 (1 de 2 placa) | Pin ESP32 |
       | :--- | :---: |
@@ -217,7 +217,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **VCC** | Au |
       | **GND** | Au |
      
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> ***VSPI*** (Segundo bus independiente, ideal para separar dispositivos y evitar conflictos de velocidad)
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> ***VSPI*** (second independent bus, ideal for separating devices and avoiding speed conflicts)
   
 
 
