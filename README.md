@@ -175,9 +175,9 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
       | Oled screen pins| ESP32 pins |
       | :--- | :---: |
-      | **SCL** | Au | 
-      | **SCA** | So |
-      | **Boton 3** | Au |
+      | **SCL** | GPIO Au | 
+      | **SCA** | GPIO So |
+      | **Boton 3** | GPIO Au |
       | **VCC** | 3.3 V |
       | **GND** | GND |
 
@@ -185,10 +185,10 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
       | Leds Switch Module pins | ESP32 pins |
       | :--- | :---: |
-      | **Button 1** | Au | 
-      | **Button 2** | So |
-      | **Button 3** | Au |
-      | **Button 4** | Au |
+      | **Button 1** | GPIO Au | 
+      | **Button 2** | GPIO So |
+      | **Button 3** | GPIO Au |
+      | **Button 4** | GPIO Au |
     
      - 📛 ***Buttons*** (pins for using the buttons)
     
