@@ -192,11 +192,11 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
     
       | Buttons pins | ESP32 pins |
       | :--- | :---: |
-      | **Button 1** | GPIO Au | 
-      | **Button 2** | GPIO So |
-      | **Button 3** | GPIO Au |
-      | **Button 4** | GPIO Au |
-      | **Button 5** | GPIO Au |
+      | **Button 1** | GPIO 32 & GND | 
+      | **Button 2** | GPIO 33 & GND |
+      | **Button 3** | GPIO 25 & GND |
+      | **Button 4** | GPIO 26 & GND |
+      | **Button 5** | GPIO 27 & GND |
 
 <br>
 <br>
