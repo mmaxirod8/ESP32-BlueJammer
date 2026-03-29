@@ -184,10 +184,9 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
       | Leds Switch Module pins | ESP32 pins |
       | :--- | :---: |
-      | **Button 1** | GPIO Au | 
-      | **Button 2** | GPIO So |
-      | **Button 3** | GPIO Au |
-      | **Button 4** | GPIO Au |
+      | **Button 1** | GPIO 17 | 
+      | **VCC** | 3.3 V |
+      | **GND** | GND |
     
      - 📛 ***Buttons*** (pins for using the buttons)
     
@@ -199,17 +198,8 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **Button 4** | GPIO Au |
       | **Button 5** | GPIO Au |
 
-     - 📛 ***TP4056 USB-C Battery Charger Module*** (pins for the lithium battery USB charger)
-    
-      | Battery Charger Module pins | ESP32 pins |
-      | :--- | :---: |
-      | **Button 1** | GPIO Au | 
-      | **Button 2** | GPIO So |
-      | **Button 3** | GPIO Au |
-      | **Button 4** | GPIO Au |
-      | **Button 5** | GPIO Au |
 
-     
+
    - 2️⃣ For the *Basic Project* version:
       - Solo se necesita la conexion de las antenas, ya que no dispone de otros componentes
       - 📛 ***Serial Peripheral Interface*** of ESP32 (pins for antenna boards, and for any version of the ESP32)
