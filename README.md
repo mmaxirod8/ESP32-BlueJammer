@@ -1,4 +1,4 @@
-# "BlueJammer" Electromagnetic Noise Generator
+# Electromagnetic Noise Generator "BlueJammer" 
 ### 📌 Here you can see how an ESP32 could be implemented as the main component of a signal generator for protocol resilience testing.
 
 <p align="center">
@@ -230,14 +230,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **VCC** | 3.3 V |
       | **GND** | GND |
 
-
-### 🚩 Real example (buttons with no connections)
-
-  <p align="center">
-  <img width="600" height="648" alt="image" src="https://github.com/user-attachments/assets/b02aa1d8-434a-493c-a052-179216d8b1b9" />
-     </p>
 <br>
-<br>
-  <p align="center">
-  <img width="600" height="648" alt="image" src="https://github.com/user-attachments/assets/9148ca7b-35bf-4b45-b6e2-be984147a43c" />
-     </p>
+
+### I hope you found this helpful and enjoyable. If so, leave a star ⭐ Best wishes and much success!
+      
