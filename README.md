@@ -202,9 +202,9 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
 
    - 2️⃣ For the *Basic Project* version:
       - Only the antenna connection is needed, as it does not have any other components.
-      - 📛 ***Serial Peripheral Interface*** of ESP32 (pins for antenna boards, and for any version of the ESP32)
+      - 📛 ***Serial Peripheral Interface*** of ESP32 (pins for antenna boards, and for any version of the ESP32) 
       
-        &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus)
+        &nbsp;&nbsp; --> ***HSPI*** (it is generally used as the main high-speed SPI bus) (📡***First Antenna*** ) 
         
       | nrf24L01 (1 of 2) pins | ESP32 pins |
       | :--- | :---: |
@@ -216,7 +216,7 @@ https://smoochiee.github.io/Bluetooth-jammer-esp32/flash1
       | **VCC** | 3.3 V |
       | **GND** | GND |
      
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> ***VSPI*** (second independent bus, ideal for separating devices and avoiding speed conflicts)
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --> ***VSPI*** (second independent bus, ideal for separating devices and avoiding speed conflicts) (📡 ***Second Antenna*** ) 
   
 
 
